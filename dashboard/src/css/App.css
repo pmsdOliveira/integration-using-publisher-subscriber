@@ -1,0 +1,102 @@
+.app {
+    align-items: center;
+    background-color: #333;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.modal {
+    align-items: center;
+    background-color: #bbb;
+    border-radius: 32px;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 80%;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.graphs {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.graph {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 25vw;
+    height: 50vh;
+}
+
+.graph-title {
+    font-size: 1.5vw;
+    padding: 2vh 0;
+}
+
+.rate {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+}
+
+.rate-field {
+    align-items: center;
+    background: #555;
+    border-radius: 8px;
+    display: flex;
+    height: 25%;
+    justify-content: center;
+    margin-top: 1vh;
+    position: relative;
+    width: 30%;
+}
+
+input {
+    border: none;
+    border-radius: 8px;
+    color: #ccc;
+    opacity: 0.5;
+    outline: none;
+    width: 100%;
+    -webkit-appearance: none;
+    transition: 0.5s ease;
+}
+
+input:hover {
+    opacity: 1;
+}
+
+.rate-value span,
+.rate-header span {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1vh 1vw;
+}
+
+.rate-value span {
+    font-size: 2rem;
+}
+
+.rate-value-left,
+.rate-value-right {
+    color: orange;
+    padding: 0 0.5vw;
+}
+
+.rate-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+    background: orange;
+    cursor: pointer;
+}

@@ -1,0 +1,5 @@
+.vscode
+tmp
+scripts/__pycache__
+dashboard/node_modules
+javamqtt/java_*
